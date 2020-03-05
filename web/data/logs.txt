@@ -39,6 +39,7 @@ Backrooms
 barrybonds
 bbhugeramble_01hooks
 bbhugeramble_02superb_owl
+bbhugeramble_03skullfriends
 bbhugeramble_04heir
 bbhugeramble_05island
 bbhugeramble_07fanfiction_lake
@@ -184,6 +185,7 @@ goodboi
 graceofrage
 Gramaphone_1
 Gramaphone_2
+grey_morality
 grim_fandan_girl
 Grok
 ground_nut

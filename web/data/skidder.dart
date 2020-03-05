@@ -6,6 +6,7 @@ const logsFile = "logs.txt";
 const outputFile = "logs.json";
 const imageFolder = "images/";
 const paldemicFolder = "paldemics/";
+const mp3Folder = "mp3s/";
 const baseUrl = "http://farragnarok.com/PodCasts/";
 
 const batch = 32;
@@ -26,8 +27,10 @@ void main() async{
           .then(stringToJson);
       json["image"] = await checkAssociatedFile(client, log, 'png', imageFolder);
       json["paldemic"] = await checkAssociatedFile(client, log, 'paldemic', paldemicFolder);
+//      json["audio"] = await checkAssociatedFile(client, log, 'mp3', mp3Folder);
       return MapEntry(log, json);
     })));
+    print("done with logs up to ${i+batch}");
   }
 
   final map = Map.fromEntries(jsons);
